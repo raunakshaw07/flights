@@ -13,13 +13,13 @@
     {{#if msg}}
         <p class="alert alert-warning">{{msg}}</p>
     {{/if}}
-    <form method="POST" action="/" class="m-4">
+    <form method="POST" action="/" class="card p-4 my-4" style="width: 60%">
         <input type="text" class="form-control mt-2" name="name" placeholder="Name">
         <input type="text" class="form-control mt-2" name="sourceCity" placeholder="Source City Name">
         <input type="text" class="form-control mt-2" name="destinationCity" placeholder="Destination City Name">
         <div class="mt-3">
-            <p>Trip Category</p>
-            <input type="radio" class="form-check-input" name="tripCategory" value="one way" checked>One Way
+            Trip Category:    
+            <input type="radio" class="form-check-input ml-3" name="tripCategory" value="one way" checked> One Way
             <input type="radio" class="form-check-input" name="tripCategory" value="round"> Round Trip
         </div>
         <input type="date" class="form-control mt-2" name="departureDay" placeholder="Departure Day">
